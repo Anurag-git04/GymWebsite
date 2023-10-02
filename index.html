@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* CSS Reset  */
+    body{
+        font-family: 'Balsamiq Sans', cursive;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: url('img/bg.jpg') ;
+        background-size:1860px;
+        background-repeat: no-repeat;
+        /* width: 700px; */
+        /* height: 34555; */
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        position: absolute;
+        /* width: 10px; */
+        left: 34px;
+        top: 25px;
+    }
+    .left img{
+        width: 134px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        line-height: -3px;
+        font-size: 20px;
+    }
+    .mid{
+        display: block;
+        width: 39%;
+        margin: 28px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /* border: 2px solid yellow ; */
+    }
+    .btn{
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(52, 42, 42);
+    }
+    .navbar{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,navbar li a.active{
+       text-decoration: underline;
+       color: rgb(16, 8, 8);
+    }
+
+    .container{
+        padding-top: 34px;
+        /* border: 2px solid white; */
+        color: rgb(17, 7, 7);
+        margin: 76px auto;
+        padding: 34px 34px;
+        width: 39%;
+        /* border-radius: 7px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_group input{
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 7px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        display: block;
+        margin: auto;
+        width: 460px;
+    }
+    #img2{
+        width: 70px;
+    }
+    #tim{
+        color: black; 
+        font-size: 38px;
+        padding-top: 15px;
+    }
+    .Gym-cont{
+        background-color: rgb(0 0 0 / 84%);
+        width: 100%;
+        padding: 45px;
+        margin-top: 644px;
+        opacity: 5;
+        /* background: url(./img/aayush.jpg);
+        background-size: 80%; */
+
+    }
+
+    .div1{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: 1350px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #im-w{
+        height: 200px;
+    }
+
+    .dy{
+        margin-left: 250px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+       
+    }
+    .footer{
+        height: 48px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.625);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/xdf.jpg" alt="" id="img2">
+            <div id="tim">HealthFreak</div>
+        </div>
+
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="Active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contract Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for some botton -->
+        <div class="right">
+           <button class="btn">Call us now</button>
+           <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join The best Gym Of Vadodara <br>JOIN NOW!!!!</h1>
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="Gym-cont">
+        <div class="div1">
+            <img src="./img/OIP.jpg" alt="" id="im-w">
+            <div class="divx">
+                <h2>Best Equipment Available</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem fuga magnam aperiam, 
+                    dolorem, cupiditate consequatur quasi fugiat doloribus similique quae corporis omnis ea optio
+                    mollitia cum nemo deserunt non autem, provident fugit id totam minima neque. Iste ad cupiditate 
+                    velit, harum possimus iusto obcaecati, tempora 
+                quibusdam quo omnis earum!</p>
+            </div>
+        </div>
+        <div class="div1 dy">
+            <div class="divx">
+                <h2>Friendly Enviroment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem fuga magnam aperiam, 
+                    dolorem, cupiditate consequatur quasi fugiat doloribus similique quae corporis omnis ea optio
+                    mollitia cum nemo deserunt non autem, provident fugit id totam minima neque. Iste ad cupiditate 
+                    velit, harum possimus iusto obcaecati, tempora 
+                quibusdam quo omnis earum!</p>
+            </div>
+            <img src="./img/x-veoi.jpg" alt="" id="im-w">
+        </div>
+        <div class="div1">
+            <img src="./img/aayush.jpg" alt="" id="im-w">
+            <div class="divx">
+                <h2>Best Trainer Available</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem fuga magnam aperiam, 
+                    dolorem, cupiditate consequatur quasi fugiat doloribus similique quae corporis omnis ea optio
+                    mollitia cum nemo deserunt non autem, provident fugit id totam minima neque. Iste ad cupiditate 
+                    velit, harum possimus iusto obcaecati, tempora 
+                quibusdam quo omnis earum!</p>
+            </div>
+        </div>
+        <div class="div1 dy">
+            <div class="divx">
+                <h2>Flexiable Timing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem fuga magnam aperiam, 
+                    dolorem, cupiditate consequatur quasi fugiat doloribus similique quae corporis omnis ea optio
+                    mollitia cum nemo deserunt non autem, provident fugit id totam minima neque. Iste ad cupiditate 
+                    velit, harum possimus iusto obcaecati, tempora 
+                quibusdam quo omnis earum!</p>
+            </div>
+            <img src="./img/clock.jpg" alt="" id="im-w">
+        </div>
+    </div>
+    <div class="footer">
+        <span>&copy; 2023 WebSite belong To DD Technology</span>
+    </div>
+</body>
+</html>
